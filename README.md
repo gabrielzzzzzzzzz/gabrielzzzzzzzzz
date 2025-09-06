@@ -3,29 +3,27 @@ from dataclasses import dataclass, field
 from typing import List, Dict
 
 @dataclass
-class Sy:
-    name: str = "Sy Rashid"
-    age: int = 33
-    work: List[str] = field(default_factory=lambda: ["ARTSVP", "MangoTree Dev"])
-    education: List[str] = field(default_factory=lambda: ["Georgia Tech MSCS", "Le Wagon", "HBX/HBS", "Georgia Tech BSNRE"])
-    hobbies: List[str] = field(default_factory=lambda: ["Skydiving", "Snowboarding", "Burritos"])
+class Me:
+    name: str = "Gabriel"
+    age: int = 16
+    education: List[str] = field(default_factory=lambda: ["High School"])
+    hobbies: List[str] = field(default_factory=lambda: ["Computer Science", "Fashion", "Music"])
 
     def languages(self) -> Dict[str, List[str]]:
         return {
-            "human": ["English", "Bengali", "Portuguese", "Spanish"],
-            "programming": ["Python", "Go", "JavaScript", "SQL", "C"]
+            "human": ["English", "French"],
+            "programming": ["Python", "Go", "JavaScript", "SQLI", "PHP"]
         }
 
-    def currentLocation(self) -> str:
-        return "Lisbon, PT"
+    def current_location(self) -> str:
+        return "France, FR"
 
-    def nextLocations(self) -> List[str]:
-        return ["Chamonix, FR"]
+    def next_locations(self) -> List[str]:
+        return ["Kobe, JP"]
 
     def currently(self) -> Dict[str, List[str]]:
         return {
-            "studying": ["Natural Language Processing", "Deep Learning", "Language of Proofs"],
-            "reading": ["The Moral Animal", "Discrete Mathematics and Its Applications"],
-            "tinkering": ["PR Stacking (Graphite)", "Quant Trading", "Frontside Shifty"]
+            "studying": ["React Native + Next.js", "Rust", "Cybersecurity"],
+            "tinkering": ["AI/ML", "Learning Solidity"]
         }
 ```
